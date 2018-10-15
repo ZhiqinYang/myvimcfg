@@ -61,6 +61,10 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+if has("autocmd") 
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif 
+endif
+
 
 
 """"""""""""""""""""""""""""""
@@ -77,8 +81,19 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'vim-scripts/Auto-Pairs'
 Plug 'majutsushi/tagbar'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 """""""""""""""""""""""
+
+
+""""""""""""""""""""""""""""""
+"NerdTree setting
+""""""""""""""""""""""""""""""
+" 关闭文件时同时关闭文件浏览器
+let g:NERDTreeQuitOnOpen                   = 0
+let g:NERDTreeWinSize                      = 25
+map <F3> :NERDTreeMirror<CR>
+map <F3> :NERDTreeToggle<CR>
 
 
 
@@ -158,7 +173,12 @@ let g:ctrlp_follow_symlinks=1
 
 
 """"""""""""""""""""TagBar"""""""""""""""""""""""""""""
-map <F3> :TagbarToggle<CR>
+map <F8> :TagbarToggle<CR>
+"autocmd FileType go call SetGoOptions()
+"function! SetGoOptions()
+"setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab 
+"    :call tagbar#autoopen(0)
+"endfunction
 """"""""""""""""""""TagBar END"""""""""""""""""""""""""""""
 
 

@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/yangzhiqin/Downloads/pages'
-let g:netrw_dirhist_2='/Users/yangzhiqin/Downloads/pages/_posts'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/yangzhiqin/Documents/okapp/src/gitlab.dev.okapp.cc/med-his-group/winlite-connd'
+let g:netrw_dirhist_2='/Users/yangzhiqin/Documents/okapp/src/gitlab.dev.okapp.cc/med-his-group/winlite-connd/vendor'
+let g:netrw_dirhist_3='/Users/yangzhiqin/Documents/okapp/src/gitlab.dev.okapp.cc/med-his-group/winlite-connd/vendor/gopkg.in'
+let g:netrw_dirhist_4='/Users/yangzhiqin/Documents/okapp/src/gitlab.dev.okapp.cc/med-his-group/winlite-connd'
